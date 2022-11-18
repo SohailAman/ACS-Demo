@@ -15508,6 +15508,10 @@ img.lazyloading {
     margin-top: 30px
 }
 
+.technologies--icons-wrap .icons img {
+    height: 120px;
+}
+
 .technologies--icons-wrap a {
     color: #222
 }
@@ -15529,7 +15533,6 @@ img.lazyloading {
 
 .story {
     padding: 80px 0;
-    overflow: hidden
 }
 
 .story .container-fluid {
@@ -15548,13 +15551,13 @@ img.lazyloading {
 }
 
 .story--text {
-    padding: 60px 60px 90px 60px;
+    padding: 50px 50px 65px 40px;
     background-color: #ffc232;
     color: #222;
-    width: 600px;
+    width: 650px;
     position: absolute;
-    top: 20%;
-    right: 52%
+    top: 0%;
+    right: 45%
 }
 
 .story--paragraph {
@@ -15714,7 +15717,7 @@ img.lazyloading {
     position: relative;
     display: flex;
     margin: 0 15px;
-    padding: 50px 15px;
+    padding: 15px 15px 50px 15px;
     height: 100%;
     background-color: #fff;
     text-align: center;
@@ -15744,7 +15747,7 @@ img.lazyloading {
 }
 
 .remote-team-steps--content-icon {
-    margin-top: 65px
+    margin-bottom: 15px
 }
 
 .remote-team-steps--content-text {
@@ -15759,7 +15762,7 @@ img.lazyloading {
 .remote-team-steps--content-btn {
     position: relative;
     top: 20px;
-    margin-top: auto
+    margin-top: 10px;
 }
 
 .remote-team-steps--content-btn a {
