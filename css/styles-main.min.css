@@ -2282,6 +2282,23 @@ pre code {
 }
 
 @media (max-width:767.98px) {
+    .story--text {
+        padding: 25px 15px !important;
+    }
+
+    .story--btn {
+        padding: 12px 25px !important;
+        font-size: 13px !important;
+    }
+
+    .story .story--text p {
+        font-size: 12px !important;
+    }
+
+    .story .story--text h2 {
+        font-size: 16px !important;
+    }
+
     .table-responsive-md {
         display: block;
         width: 100%;
@@ -2291,6 +2308,13 @@ pre code {
 
     .table-responsive-md>.table-bordered {
         border: 0
+    }
+}
+
+@media(max-width:598px) {
+    .remote-team-steps--slide .owl-stage .owl-item.active.center {
+        transform: scaleY(1.3) scaleX(1.65) !important;
+        z-index: 3;
     }
 }
 
@@ -17767,25 +17791,14 @@ p {
     position: relative
 }
 
-.story--image {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    text-align: right
-}
-
 .story--image img {
-    width: 56%;
-    margin-right: -15px
+    width: 100%;
+    border-radius: 16px;
 }
 
 .story--text {
     padding: 50px 50px 65px 40px;
-    background-color: #ffc232;
     color: #222;
-    width: 650px;
-    position: absolute;
-    top: 0%;
-    right: 45%
 }
 
 .story--paragraph {
@@ -17795,6 +17808,8 @@ p {
 .story--paragraph p {
     color: #666
 }
+
+
 
 .clients {
     background-color: #f8f8f8;

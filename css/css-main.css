@@ -15531,6 +15531,11 @@ img.lazyloading {
     transition: 0.3s ease all
 }
 
+.story--image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
 .story {
     padding: 80px 0;
 }
@@ -15539,25 +15544,10 @@ img.lazyloading {
     position: relative
 }
 
-.story--image {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    text-align: right
-}
-
-.story--image img {
-    width: 56%;
-    margin-right: -15px
-}
-
 .story--text {
     padding: 50px 50px 65px 40px;
-    background-color: #ffc232;
+    background-color: #eee;
     color: #222;
-    width: 650px;
-    position: absolute;
-    top: 0%;
-    right: 45%
 }
 
 .story--paragraph {
@@ -15569,13 +15559,17 @@ img.lazyloading {
 }
 
 .story--btn {
-    position: relative;
-    top: 20px;
+    margin-top: 10px;
     padding: 17px 40px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #ffc107;
     font-size: 16px;
     font-weight: 600
+}
+
+.story--btn:hover {
+    background-color: #444444;
+    color: #fff;
 }
 
 .company-logo {
@@ -15951,19 +15945,13 @@ img.lazyloading {
 
     .story--image img {
         width: 100%;
-        height: 600px;
+        height: 40vh;
         margin-right: 0;
         object-fit: cover
     }
 
     .story--text {
-        top: unset;
-        left: 50%;
-        bottom: 0;
-        right: unset;
         padding: 30px 30px 60px 30px;
-        width: 80%;
-        transform: translateX(-50%)
     }
 }
 
@@ -16157,7 +16145,8 @@ img.lazyloading {
     }
 
     .remote-team-steps--slide .owl-stage .owl-item.active.center {
-        transform: scale(1.3)
+        transform: scale(1.3);
+        z-index: 3;
     }
 
     .remote-team-steps--slide .owl-stage .owl-item.active.center .remote-team-steps--content-btn a {
