@@ -15560,7 +15560,7 @@ img.lazyloading {
 
 .story--btn {
     margin-top: 10px;
-    padding: 17px 40px;
+    padding: 15px 35px;
     color: #fff;
     background-color: #444444;
     font-size: 16px;
@@ -15808,11 +15808,6 @@ img.lazyloading {
     background: white;
 }
 
-@media (max-width: 786px) {
-    .projectFactsWrap .item {
-        flex: 0 0 50%;
-    }
-}
 
 .remote-team-steps {
     position: relative;
@@ -15859,7 +15854,7 @@ img.lazyloading {
 .remote-team-steps--content-title h3 {
     position: relative;
     font-size: 24px;
-    font-weight: 500
+    font-weight: 600
 }
 
 .remote-team-steps--content-icon {
@@ -15872,7 +15867,6 @@ img.lazyloading {
 
 .remote-team-steps--content-text p {
     font-size: 16px;
-    font-weight: 600
 }
 
 .remote-team-steps--content-btn {
