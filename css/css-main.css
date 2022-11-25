@@ -16495,7 +16495,7 @@ img.lazyloading {
     }
 
     .story--image img {
-        height: 350px
+        height: 270px
     }
 
     .story--text h2 {
@@ -16508,7 +16508,7 @@ img.lazyloading {
 
     .story--btn {
         display: block;
-        padding: 12px 0;
+        padding: 10px 20px !important;
         max-width: 160px;
         text-align: center
     }
@@ -17092,7 +17092,12 @@ img.lazyloading {
     }
 
     .home main .banner--content--button {
-        display: none
+        padding: 8px 22px;
+        top: 10px;
+        font-size: 14px;
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
     }
 
     .home main .banner--content h1 {
@@ -17101,7 +17106,8 @@ img.lazyloading {
     }
 
     .home main .banner--content p {
-        display: none
+        font-size: 14px !important;
+        text-align: center;
     }
 
     .home main .banner--carousel {
