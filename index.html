@@ -372,12 +372,12 @@
           YOURCADTEAM
         </a>
         <!-- end custom logo -->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <div id="menu" class="collapse navbar-collapse menu-right">
+        <button class="navbar-toggler navbar-toggler-right" id="menuTrigger" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-right d-md-block d-none">
           <ul id="main-menu" class="navbar-nav ml-auto menus">
             <li id="menu-item-1532"
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1532 nav-item"><a href="#"
@@ -402,6 +402,39 @@
                 class="nav-link">Contact</a></li>
           </ul>
         </div>
+        <div id="menuSlide" class="sm-slider d-lg-none d-md-none d-block slideOut">
+          <ul id="main-menu" class="navbar-nav innerNav p-3 position-relative">
+            <a href="#" class="navbar-brand custom-logo-link" rel="home" aria-current="page">
+              YOURCADTEAM
+            </a>
+            <button id="closeBtn" class="btn-close border-0">
+              <i class="fa fa-times text-white"></i>
+            </button>
+            <li id="menu-item-1532"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1532 nav-item mt-4">
+              <hr width="80%" class="border-secondary">
+              <a href="#" class="nav-link mx-auto">Outsourcing</a>
+            </li>
+            <li id="menu-item-1533"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1533 nav-item"><a href="#"
+                class="nav-link mx-auto">Our expertise</a></li>
+            <li id="menu-item-1533"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1533 nav-item"><a href="#"
+                class="nav-link mx-auto">Industries</a></li>
+            <li id="menu-item-1535"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1535 nav-item"><a href="#"
+                class="nav-link mx-auto">prijzen</a></li>
+            <li id="menu-item-1536"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1536 nav-item"><a href="#"
+                class="nav-link mx-auto">Non disclosure & Intellectual Property</a></li>
+            <li id="menu-item-1533"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1533 nav-item"><a href="#"
+                class="nav-link mx-auto">About us</a></li>
+            <li id="menu-item-1533"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1533 nav-item"><a href="#"
+                class="nav-link mx-auto">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -419,7 +452,6 @@
               </p>
               <a href="#" class="banner--content--button">See More</a>
             </div>
-            <div class="mobile-scroll-btn"><a href="#ser"><i class="fas fa-chevron-down"></i></a></div>
           </div>
         </div>
     </section>
@@ -482,7 +514,7 @@
     <!-- ------------- -->
     <section class="story">
       <div class="container-fluid">
-        <div class="row mx-0 align-items-center justify-content-center">
+        <div class="row mx-0 align-items-end justify-content-center">
           <div class="col-md-6 mb-3 order-md-0 order-1">
             <div class="col- story--text">
               <h2 class="pb-3">WELCOME TO YOURCADTEAM</h2>
@@ -505,16 +537,17 @@
               </div>
             </div>
           </div>
-
-          <div class="col-md-6 mb-3 order-md-1 order-0">
+          <div class="col-md-6 mb-3 order-md-1 order-0 d-flex align-items-end justify-content-center">
             <div class="story--image h-100 w-100">
-              <img src="./images/05-codingchiefs_img_office_26.jpg" width="100%">
+              <img src="./images/05-codingchiefs_img_office_27.jpg" width="100%">
             </div>
           </div>
 
-          <div class="col-md-6 mb-3 order-2">
+        </div>
+        <div class="row mx-0 align-items-start justify-content-center">
+          <div class="col-md-6 mb-3 order-2 d-flex align-items-start justify-content-center">
             <div class="story--image h-100 w-100">
-              <img src="./images/05-codingchiefs_img_office_26.jpg" width="100%">
+              <img src="./images/05-codingchiefs_img_office_27.jpg" width="100%">
             </div>
           </div>
 
@@ -777,6 +810,7 @@
     media="all">
   <link rel="stylesheet" id="gforms_browsers_css-css" href="./css/css-browsers.min.css" type="text/css" media="all">
   <script type="text/javascript" src="./js/in.js" id="in.js-js"> lang: en_US</script>
+  <script type="text/javascript" src="./js/sidebarv2.js"></script>
   <script type="text/javascript" src="./js/vendors-bootstrap.min.js" id="bootstrap-js"></script>
   <script type="text/javascript" src="./js/vendors-popper.min.js" id="popper-js"></script>
   <script type="text/javascript" src="./js/scripts-main.js" id="cc-scripts-js"></script>

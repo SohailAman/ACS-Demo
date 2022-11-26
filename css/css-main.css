@@ -14844,6 +14844,40 @@ header .navbar .navbar-nav .dropdown-menu li a:hover {
     background-color: #f8f8f8
 }
 
+header .navbar .sm-slider {
+    background: #1b1b1b;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 9991;
+}
+
+.slideOut {
+    transition: all .5s;
+    transform: translateX(-100%);
+}
+
+.slideInn {
+    transform: translateX(0) !important;
+    transition: all .5s;
+}
+
+header .navbar .sm-slider .btn-close {
+    background: #2e2e2e;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
 header .navbar .navbar-toggler .icon-bar {
     background-color: white
 }
@@ -14889,25 +14923,40 @@ header .navbar .navbar-toggler .icon-bar {
         position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(0);
         padding-bottom: 35px;
-        background-color: rgba(0, 0, 0, 0.5)
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        transition: .3s all;
     }
 
-    header .navbar .navbar-nav {
-        padding: 15px;
-        background-color: rgba(0, 0, 0, 0.9);
-        border-radius: 5px
+    /* header .navbar.scrolled .navbar-toggler {
+        position: fixed;
+        top: 6px;
+        left: 15px;
+        z-index: 999;
+        transition: .3s all;
+    } */
+
+    header .navbar .navbar-container .navbar-brand {
+        position: absolute;
+        left: 50%;
+        top: 12px;
+        transform: translateX(-50%);
+        transition: .3s all;
     }
+
+
 
     header .navbar .navbar-nav li a {
         width: calc(100% - 20px)
     }
 
-    header .navbar .navbar-container .navbar-brand {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%)
-    }
 
     header .navbar .menu-left {
         position: absolute;
@@ -16077,7 +16126,12 @@ img.lazyloading {
     }
 
     .story {
-        padding: 30px 0
+        padding: 0
+    }
+
+    .remote-team-steps {
+        padding-top: 5px !important;
+        padding-bottom: 25px !important;
     }
 
     .story--image {
@@ -16256,8 +16310,8 @@ img.lazyloading {
     }
 
     .remote-team-steps--slide .owl-stage {
-        padding-top: 110px;
-        padding-bottom: 80px
+        padding-top: 40px !important;
+        padding-bottom: 0 !important
     }
 
     .remote-team-steps--slide .owl-stage .owl-item.active.center {
@@ -16381,7 +16435,7 @@ img.lazyloading {
         display: flex;
         width: calc(100% - 30px);
         height: 10px;
-        margin: 40px auto 0 auto
+        margin: 20px auto 0 auto
     }
 
     .owl-carousel .owl-dots .owl-dot {
@@ -17086,6 +17140,10 @@ img.lazyloading {
 }
 
 @media screen and (max-width:767px) {
+    .home main .banner {
+        padding-top: 125px;
+    }
+
     .home main .banner {
         padding-bottom: 100px;
         height: auto
