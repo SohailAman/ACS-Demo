@@ -3478,6 +3478,42 @@ input[type="button"].btn-block {
     margin-left: 0
 }
 
+header .navbar .navbar-nav .dropdown-menu {
+    display: block !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+    transition: all .3s ease !important;
+    background-color: auto !important;
+}
+
+header .navbar .navbar-nav .dropdown-menu.show {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+    padding: auto !important;
+    margin: auto !important;
+    opacity: 1 !important;
+    transition: all .3s ease !important;
+    background-color: auto !important;
+}
+
+header .navbar .navbar-nav .dropdown-menu a {
+    font-size: 14px;
+}
+
+header .navbar .navbar-nav .dropdown-menu li.dropdown-item {
+    padding-left: 10px !important;
+}
+
+header .navbar .navbar-nav .dropdown-menu li.dropdown-item:hover a,
+header .navbar .navbar-nav .dropdown-menu li.dropdown-item:hover {
+    background-color: #eee;
+    color: #000 !important;
+}
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -3485,7 +3521,7 @@ input[type="button"].btn-block {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 10rem;
+    min-width: 1rem;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
     font-size: 1rem;
@@ -14830,6 +14866,12 @@ header .navbar .navbar-nav li a {
     font-size: 16px
 }
 
+header .navbar .navbar-nav li a:hover,
+header .navbar .navbar-nav li a.active {
+    color: #ffc232;
+    transition: .3s;
+}
+
 header .navbar .navbar-nav .dropdown-menu {
     background-color: white;
     border: none;
@@ -16900,11 +16942,32 @@ img.lazyloading {
     }
 }
 
+.themeTxt {
+    color: #ffc232;
+}
 
 .home main .banner {
     background: url(../images/05-codingchiefs_img_office_26.jpg) no-repeat;
     padding-top: 185px;
     height: 701px
+}
+
+.outsource.home main .banner {
+    height: 550px;
+    background-position: bottom !important;
+}
+
+.expert.outsource.home main .banner {
+    height: 450px;
+    background-position: center !important;
+}
+
+.expert-1.outsource.home main .banner {
+    background: url(../images/service/Product-Development.jpg) no-repeat;
+}
+
+.expert-2.outsource.home main .banner {
+    background: url(../images/service/3d-Modeling.jpg) no-repeat;
 }
 
 .home main .banner:before {
