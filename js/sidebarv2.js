@@ -143,6 +143,12 @@
 
 }(window, document));
 
+
+document.addEventListener('swiped-left', function () {
+    menuSlide.classList.remove('slideInn');
+    menuSlide.classList.add('slideOut');
+})
+
 let menuTrigger = document.getElementById('menuTrigger');
 let closeBtn = document.getElementById('closeBtn');
 let menuSlide = document.getElementById('menuSlide');
@@ -152,11 +158,6 @@ menuTrigger.addEventListener('click', () => {
     menuSlide.classList.remove('slideOut');
 })
 closeBtn.addEventListener('click', () => {
-    menuSlide.classList.remove('slideInn');
-    menuSlide.classList.add('slideOut');
-})
-
-document.addEventListener('swiped-left', function () {
     menuSlide.classList.remove('slideInn');
     menuSlide.classList.add('slideOut');
 })

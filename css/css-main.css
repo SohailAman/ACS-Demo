@@ -14892,7 +14892,7 @@ header .navbar .sm-slider {
     left: 0;
     top: 0;
     height: 100vh;
-    z-index: 9991;
+    z-index: 999999;
 }
 
 .slideOut {
@@ -14927,7 +14927,8 @@ header .navbar .navbar-toggler .icon-bar {
 header .navbar .navbar-toggler {
     position: absolute;
     top: 15px;
-    left: 15px
+    left: 15px;
+    z-index: 999999 !important;
 }
 
 header .navbar .navbar-toggler .icon-bar {
