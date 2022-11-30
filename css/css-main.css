@@ -14918,6 +14918,7 @@ header .navbar .sm-slider .btn-close {
     height: 24px;
     font-size: 13px;
     border-radius: 8px;
+    z-index: 999;
 }
 
 header .navbar .navbar-toggler .icon-bar {

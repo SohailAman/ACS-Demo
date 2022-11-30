@@ -1,26 +1,18 @@
 (function (window, document) {
-
     'use strict';
-
-    // patch CustomEvent to allow constructor creation (IE/Chrome)
     if (typeof window.CustomEvent !== 'function') {
 
         window.CustomEvent = function (event, params) {
-
             params = params || { bubbles: false, cancelable: false, detail: undefined };
-
             var evt = document.createEvent('CustomEvent');
             evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
             return evt;
         };
-
         window.CustomEvent.prototype = window.Event.prototype;
     }
-
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
     document.addEventListener('touchend', handleTouchEnd, false);
-
     var xDown = null;
     var yDown = null;
     var xDiff = null;
@@ -144,16 +136,17 @@
 }(window, document));
 
 
+
+let menuTriggerBtn = document.getElementById('menuTrigger');
+let closeBtn = document.getElementById('closeBtn');
+let menuSlide = document.getElementById('menuSlide');
+
 document.addEventListener('swiped-left', function () {
     menuSlide.classList.remove('slideInn');
     menuSlide.classList.add('slideOut');
 })
 
-let menuTrigger = document.getElementById('menuTrigger');
-let closeBtn = document.getElementById('closeBtn');
-let menuSlide = document.getElementById('menuSlide');
-
-menuTrigger.addEventListener('click', () => {
+menuTriggerBtn.addEventListener('click', () => {
     menuSlide.classList.add('slideInn');
     menuSlide.classList.remove('slideOut');
 })
