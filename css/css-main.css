@@ -16955,8 +16955,9 @@ img.lazyloading {
 }
 
 .outsource.home main .banner {
+    background: url(../images/yourcadteam.jpg) no-repeat;
     height: 550px;
-    background-position: bottom !important;
+    background-position: center !important;
 }
 
 .expert.outsource.home main .banner {
