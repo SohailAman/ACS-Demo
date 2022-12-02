@@ -14895,6 +14895,11 @@ header .navbar .sm-slider {
     z-index: 999999;
 }
 
+header .navbar .sm-slider .navbar-brand.custom-logo-link {
+
+    z-index: 9;
+}
+
 .slideOut {
     transition: all .5s;
     transform: translateX(-100%);
