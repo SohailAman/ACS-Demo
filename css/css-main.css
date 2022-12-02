@@ -16948,6 +16948,7 @@ img.lazyloading {
     color: #ffc232;
 }
 
+/* Background Images */
 .home main .banner {
     background: url(../images/05-codingchiefs_img_office_26.jpg) no-repeat;
     padding-top: 185px;
@@ -16962,6 +16963,7 @@ img.lazyloading {
 
 .expert.outsource.home main .banner {
     height: 450px;
+    background-size: cover !important;
     background-position: center !important;
 }
 
@@ -16973,6 +16975,25 @@ img.lazyloading {
     background: url(../images/service/3d-Modeling.jpg) no-repeat;
 }
 
+.expert-3.outsource.home main .banner {
+    background: url(../images/service/Mechanical-Drafting-Services.jpg) no-repeat;
+}
+
+.expert-4.outsource.home main .banner {
+    background: url(../images/service/CAD-Conversion-Services.jpg) no-repeat;
+}
+
+.expert-5.outsource.home main .banner {
+    background: url(../images/service/3d-Rendering.jpg) no-repeat;
+}
+
+.industry.home main .banner {
+    background: url(../images/industry-bg.jpg) no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+/* Background Images */
 .home main .banner:before {
     content: '';
     position: absolute;
